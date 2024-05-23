@@ -1,209 +1,211 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Registration form</title>
-         <link rel="stylesheet" href="script.js" type="text/Javascript">
-    </head>
-    <style>
-        body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 105vh;
-        background-color:#243743;
-        }
-        form{
-            text-align: center;
-        }
-        .x{
-            padding:10px;
-        }
-        .container {
-        width: 400px;
-        padding: 15px 25px;
-        background-color:#D7C49EFF;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .x input[type="text"],
-        .x input[type="email"],
-        .x input[type="password"]{
-        padding: 5px;
-        border: 1px solid #ccc;
-        border-radius: 3px;
-        }
-        .x button {
-        padding: 10px;
-        background-color:#953553;
-        color: #fff;
-        border: none;
-        border-radius: 3px;
-        cursor: pointer;
-        width: 100%;
-        }
-        h1{
-            color:black;
-           padding:8px;
-            margin:10px;
-            font-size: 30px;
-            text-align: center;
-        }
-        .y{
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
-            border-color: #953553;
-            text-align: center;
-        }
-        .x label {
-        font-weight: bold;
-        }
-        .x input{
-            align-items:center;
-        }
-        .x button:hover {
-        background-color:#567572ff;
-        }
-        p{
-            font-size: 28px;
-            color:black;
-        }
-        table{
-            text-align: center ;
-            padding: 10px 5px;
-            background-color: #953553;
-            border-radius: 5px;
-            box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); 
-            border-color: #244b92;
-        }
-    </style>
-    <body>
-        <div class="container">
-            <form id="form">
-                <h1><u>SPACEX</u></h1>
-                <p>Join with us to reach your destination...</p>
-                <div class="y"><br>
-                    <div class="x">
-                        <label for="name"><b>Username:</b></label>
-                        <input  type="text" id="name" name="name" required>
-                    </div>
-                    <div class="x">
-                        <label for="email"><b>Email :</b></label>
-                        <input   type="email" id="email" name="email" required>
-                    </div>
-                    <div class="x">
-                        <label for="password"><b>Password:</b></label>
-                        <input  type="password" id="password" name="password" required></div>
-                    <div class="x">
-                        <label for="dob"><b>Date Of Birth:</b></label>
-                        <input  type="date" id="dob" name="dob" required>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="terms" required>
-                        <label for="terms">Terms & Conditions</label>
-                    </div><br>
-                </div><br>
-               
-                <div class="x">
-                    <button type="submit" ><b>Sign up</b></button>
-                </div>
-            </form><br><hr>
-        
-            <div>
-                <h1><u>ENTRIES</u></h1>
-                <table border="1" class="table" id="details">
-                    <thead>
-                        <tr>
-                            <th>Username</th>
-                            <th>Email</th>
-                            <th>Password</th>
-                            <th>Dob</th>
-                            <th>Accepted Terms?</th>
-                        </tr>
-                    </thead>
-                </table>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <link rel="stylesheet" href="script.js" type="text/Javascript" />
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 105vh;
+      background-color: #243743;
+    }
+    form {
+      text-align: center;
+    }
+    .x {
+      padding: 10px;
+    }
+    .container {
+      width: 400px;
+      padding: 15px 25px;
+      background-color: #d7c49eff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .x input[type="text"],
+    .x input[type="email"],
+    .x input[type="password"] {
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    .x button {
+      padding: 10px;
+      background-color: #953553;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      width: 100%;
+    }
+    h1 {
+      color: black;
+      padding: 8px;
+      margin: 10px;
+      font-size: 30px;
+      text-align: center;
+    }
+    .y {
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+      border-color: #953553;
+      text-align: center;
+    }
+    .x label {
+      font-weight: bold;
+    }
+    .x input {
+      align-items: center;
+    }
+    .x button:hover {
+      background-color: #567572ff;
+    }
+    p {
+      font-size: 28px;
+      color: black;
+    }
+    table {
+      text-align: center;
+      padding: 10px 5px;
+      background-color: #953553;
+      border-radius: 5px;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+      border-color: #244b92;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <form id="form">
+        <h1><u>SPACEX</u></h1>
+        <p>Join with us to reach your destination...</p>
+        <div class="y">
+          <br />
+          <div class="x">
+            <label for="name"><b>Username:</b></label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="x">
+            <label for="email"><b>Email :</b></label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="x">
+            <label for="password"><b>Password:</b></label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <div class="x">
+            <label for="dob"><b>Date Of Birth:</b></label>
+            <input type="date" id="dob" name="dob" required />
+          </div>
+          <div>
+            <input type="checkbox" id="terms" required />
+            <label for="terms">Terms & Conditions</label>
+          </div>
+          <br />
         </div>
+        <br />
+
+        <div class="x">
+          <button type="submit"><b>Sign up</b></button>
+        </div>
+      </form>
+      <br />
+      <hr />
+
+      <div>
+        <h1><u>ENTRIES</u></h1>
+        <table border="1" class="table" id="details">
+          <thead>
+            <tr>
+              <th>Username</th>
+              <th>Email</th>
+              <th>Password</th>
+              <th>Dob</th>
+              <th>Accepted Terms?</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
     </div>
-        
-   
-        
-    </body>
-<script>
+  </body>
+  <script>
+    let currentDate = new Date();
+    let minDate = new Date(currentDate);
+    minDate.setFullYear(currentDate.getFullYear() - 55);
 
+    let maxDate = new Date(currentDate);
+    maxDate.setFullYear(currentDate.getFullYear() - 18);
 
-       
-let currentDate = new Date();
-let minDate = new Date(currentDate);
-minDate.setFullYear(currentDate.getFullYear() - 55);
+    // Retrieve data from local storage on page load
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("dob").min = minDate.toISOString().split("T")[0];
+      document.getElementById("dob").max = maxDate.toISOString().split("T")[0];
 
-let maxDate = new Date(currentDate);
-maxDate.setFullYear(currentDate.getFullYear() - 18);
+      loadDataFromLocalStorage();
+    });
 
-// Retrieve data from local storage on page load
-document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('dob').min = minDate.toISOString().split('T')[0];
-    document.getElementById('dob').max = maxDate.toISOString().split('T')[0];
-    
-    loadDataFromLocalStorage();
-});
+    document
+      .getElementById("form")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+        addData();
+      });
 
-document.getElementById("form").addEventListener('submit', function (event) {
-    event.preventDefault();
-    addData();
-});
+    function addData() {
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      const dob = document.getElementById("dob").value;
+      const terms = document.getElementById("terms").checked;
 
-function addData() {
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-    const dob = document.getElementById("dob").value;
-    const terms = document.getElementById("terms").checked;
+      const table = document.getElementById("details");
+      const newRow = table.insertRow(-1);
+      const cell1 = newRow.insertCell(0);
+      const cell2 = newRow.insertCell(1);
+      const cell3 = newRow.insertCell(2);
+      const cell4 = newRow.insertCell(3);
+      const cell5 = newRow.insertCell(4);
 
-    const table = document.getElementById("details");
-    const newRow = table.insertRow(-1);
-    const cell1 = newRow.insertCell(0);
-    const cell2 = newRow.insertCell(1);
-    const cell3 = newRow.insertCell(2);
-    const cell4 = newRow.insertCell(3);
-    const cell5 = newRow.insertCell(4);
+      cell1.innerHTML = name;
+      cell2.innerHTML = email;
+      cell3.innerHTML = password;
+      cell4.innerHTML = dob;
+      cell5.innerHTML = terms;
 
-    cell1.innerHTML = name;
-    cell2.innerHTML = email;
-    cell3.innerHTML = password;
-    cell4.innerHTML = dob;
-    cell5.innerHTML = terms;
+      // Save data to local storage
+      saveDataToLocalStorage(name, email, password, dob, terms);
 
-    // Save data to local storage
-    saveDataToLocalStorage(name, email, password, dob, terms);
+      document.getElementById("form").reset();
+    }
 
-    document.getElementById("form").reset();
-}
-
-function saveDataToLocalStorage(name, email, password, dob, terms) {
-    const data = {
+    function saveDataToLocalStorage(name, email, password, dob, terms) {
+      const data = {
         name: name,
         email: email,
         password: password,
         dob: dob,
-        terms: terms
-    };
+        terms: terms,
+      };
 
-    let existingData = JSON.parse(localStorage.getItem('userData')) || [];
-    existingData.push(data);
+      let existingData = JSON.parse(localStorage.getItem("userData")) || [];
+      existingData.push(data);
 
-    localStorage.setItem('userData', JSON.stringify(existingData));
-}
+      localStorage.setItem("userData", JSON.stringify(existingData));
+    }
 
-function loadDataFromLocalStorage() {
-    let existingData = JSON.parse(localStorage.getItem('userData')) || [];
+    function loadDataFromLocalStorage() {
+      let existingData = JSON.parse(localStorage.getItem("userData")) || [];
 
-    const table = document.getElementById("details");
-    existingData.forEach(data => {
+      const table = document.getElementById("details");
+      existingData.forEach((data) => {
         const newRow = table.insertRow(-1);
         const cell1 = newRow.insertCell(0);
         const cell2 = newRow.insertCell(1);
@@ -216,11 +218,7 @@ function loadDataFromLocalStorage() {
         cell3.innerHTML = data.password;
         cell4.innerHTML = data.dob;
         cell5.innerHTML = data.terms;
-    });
-}
-
-
-        
-    </script>
-  
+      });
+    }
+  </script>
 </html>
